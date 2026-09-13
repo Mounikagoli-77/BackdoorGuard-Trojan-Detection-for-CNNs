@@ -30,7 +30,7 @@ The main objective is to identify hidden backdoor triggers, analyze suspicious m
   
 ## Technologies Used
 
-- Python – Used to develop the complete project and implement the detection algorithms.
+- Python (3.10 version) – Used to develop the complete project and implement the detection algorithms.
 - PyTorch – Used to build, train, and analyze the CNN neural network models.
 - CIFAR-10 – Used as the image dataset for training and testing clean and backdoored models.
 - Scikit-learn – Used for PCA, K-Means clustering, and anomaly analysis.
