@@ -1,0 +1,23 @@
+FINAL BACKDOOR DETECTION REPORT
+===========================================================================
+
+Verdict: MODEL LIKELY CLEAN
+Most suspicious class: bird
+Combined score: 0.1753
+Neural Cleanse score: 0.2109
+Activation clustering score: 0.0922
+
+No strong combined anomaly was detected.
+
+CLASS-WISE RESULTS
+---------------------------------------------------------------------------
+bird,0.07111070,0.2109,0.0922,0.1753
+deer,0.08108228,0.1816,0.0824,0.1519
+ship,0.10427399,0.1135,0.1315,0.1189
+frog,0.10768839,0.1034,0.1295,0.1113
+truck,0.12562913,0.0507,0.0967,0.0645
+airplane,0.16015494,0.0000,0.1022,0.0307
+horse,0.24270183,0.0000,0.1014,0.0304
+automobile,0.21960537,0.0000,0.0988,0.0296
+dog,0.22251564,0.0000,0.0962,0.0289
+cat,0.19451746,0.0000,0.0899,0.0270

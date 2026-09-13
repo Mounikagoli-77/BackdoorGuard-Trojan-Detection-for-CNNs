@@ -1,0 +1,4 @@
+Source class: airplane
+Target class: truck
+Poison ratio: 0.1
+Trigger size: 3x3
