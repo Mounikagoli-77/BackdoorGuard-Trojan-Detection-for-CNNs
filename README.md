@@ -10,16 +10,13 @@ The main objective is to identify hidden backdoor triggers, analyze suspicious m
 
 ## Methodology
 
-1. Create a clean CNN model using CIFAR-10.
-2. Create a backdoored model by adding a trigger and changing labels.
-3. Analyze the model using:
-   - Neural Cleanse
-   - MAD Anomaly Scoring
-   - Activation Clustering
-   - Source-to-Target Analysis
-4. Combine the detection evidence.
-5. Generate the final security verdict.
-6. Display the results using a Streamlit dashboard.
+1. **Dataset Preparation:** Use the CIFAR-10 dataset to prepare clean and poisoned image data.
+2. **Model Training:** Train clean and backdoored CNN models using PyTorch.
+3. **Image Processing:** Resize, normalize, and convert uploaded images into tensors.
+4. **Model Inference:** Predict image classes and probabilities using trained CNN models.
+5. **Trigger Analysis:** Apply a 3×3 trigger patch and compare normal and triggered predictions.
+6. **Backdoor Detection:** Use Neural Cleanse and Activation Clustering to identify suspicious behavior.
+7. **Result Visualization:** Display security scores, detection reports, and trigger visualizations through the Streamlit dashboard.
 
 ## Detection Techniques
 
@@ -51,43 +48,7 @@ The main objective is to identify hidden backdoor triggers, analyze suspicious m
   
 ## System Architecture
 
-        STAGE 1: MODEL CREATION
-                 │
-        ┌────────┴─────────┐
-        ▼                  ▼
-    Clean Model       Backdoored Model
-    CIFAR-10 + CNN    Trigger + Relabel
-        │                  │
-        └────────┬─────────┘
-                 ▼
-        STAGE 2: DETECTION
-                 │
-        ┌────────┼────────┬──────────────┐
-        ▼        ▼        ▼              ▼
-    Neural      MAD    Activation     Source →
-    Cleanse    Score    Clustering      Target
-        │        │        │              │
-        └────────┴────────┴──────────────┘
-                 ▼
-        Combined Evidence
-                 │
-                 ▼
-        STAGE 3: FINAL RESULT
-                 │
-        ┌────────┴────────┐
-        ▼                 ▼
-    Model CLEAN      Model BACKDOORED
-                           │
-                           ▼
-                  Suspicious Class
-                           │
-                           ▼
-              Streamlit Dashboard
-              • Detection
-              • Verification
-              • Trigger
-              • Reports
-  
+  <img width="1536" height="1024" alt="System Architecture 1" src="https://github.com/user-attachments/assets/0eef5563-31a3-4ab6-bbf9-072a64b56a6b" />
 
 ## How to Run
     pip install -r requirements.txt
