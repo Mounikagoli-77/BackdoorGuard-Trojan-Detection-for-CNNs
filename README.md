@@ -53,7 +53,7 @@ The main objective is to identify hidden backdoor triggers, analyze suspicious m
 ## Installation
 
 1. Clone the repository: 
-git clone https://github.com/Mounikagoli-77/BackdoorGuard-Trojan-Detection-for-CNNs.git
+git clone https: https://github.com/Mounikagoli-77/BackdoorGuard-Trojan-Detection-for-CNNs
 cd BackdoorGuard-Trojan-Detection-for-CNNs
 2. Create a virtual environment: 
 python -m venv venv
