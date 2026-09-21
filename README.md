@@ -50,10 +50,58 @@ The main objective is to identify hidden backdoor triggers, analyze suspicious m
 
   <img width="1536" height="1024" alt="System Architecture 1" src="https://github.com/user-attachments/assets/0eef5563-31a3-4ab6-bbf9-072a64b56a6b" />
 
+## Installation
+
+1. Clone the repository: 
+git clone https://github.com/Mounikagoli-77/BackdoorGuard-Trojan-Detection-for-CNNs.git
+cd BackdoorGuard-Trojan-Detection-for-CNNs
+2. Create a virtual environment: 
+python -m venv venv
+3. Activate the environment: 
+venv\Scripts\activate
+4. Install dependencies: 
+pip install -r requirements.txt
+
+## Model Training
+
+1. Prepare the CIFAR-10 dataset.
+2. Train the clean CNN model using train_clean.py.
+3. Generate poisoned data using poison_dataset.py.
+4. Train the backdoored model using train_backdoor.py.
+5. Save the trained models in the models/ directory.
+   
 ## How to Run
     pip install -r requirements.txt
     streamlit run app.py
 
+## Example Detection Results
+
+The system generates detection reports containing:
+
+- Model security verdict
+- Suspicious class
+- Neural Cleanse score
+- Activation Clustering evidence
+- Combined detection score
+- Trigger analysis and visualization
+
+**Example output:**
+
+Model Verdict: MODEL LIKELY CLEAN
+Suspicious Class: Deer
+Combined Score: 0.3993
+
+**Note:** These values are example results from an experimental
+run and do not guarantee that the model is free of backdoors.
+
+## Limitations
+
+- Detection results may contain false positives or false negatives.
+- Detection performance depends on the model and attack type.
+- The system is primarily evaluated using the CIFAR-10 dataset.
+- Detection does not guarantee complete removal of backdoors.
+- Larger and more complex models may require additional resources.
+  
 ## Results
 
 Successfully detects possible backdoor attacks and displays the security verdict, suspicious class, trigger analysis, and detection evidence through the Streamlit dashboard.
