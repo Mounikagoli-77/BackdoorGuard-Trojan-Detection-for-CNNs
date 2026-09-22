@@ -1,0 +1,53 @@
+============================================================
+COMBINED BACKDOOR DETECTOR
+============================================================
+
+Candidate model: poisoned_model.pt
+Reference model: clean_model.pt
+
+FINAL VERDICT
+-------------
+MODEL LIKELY CLEAN
+Confidence: LOW / NO STRONG EVIDENCE
+
+MOST SUSPICIOUS CLASS
+----------------------
+Class: cat
+Model NC: 0.172664
+Clean NC: 0.368866
+Trigger reduction: 53.19%
+NC score: 0.3723
+AC evidence: 0.0000
+Combined NC + AC: 0.2979
+
+SOURCE -> TARGET V2
+-------------------
+Source: horse
+Target: bird
+Location: bottom_left
+Baseline: 60.00%
+Triggered success: 80.00%
+Increase: 20.00%
+Probability: 45.90%
+Trigger size: 0.512666
+Evidence score: 0.4959
+
+MODEL-LEVEL EVIDENCE
+--------------------
+Strong NC classes: 0
+Moderate NC classes: 1
+Maximum trigger reduction: 53.19%
+Mean positive trigger reduction: 13.42%
+
+CLASS RESULTS
+-------------
+cat          ModelNC=0.172664 CleanNC=0.368866 Reduction=0.5319 NC=0.3723 AC=0.0000 Combined=0.2979
+ship         ModelNC=0.168779 CleanNC=0.308574 Reduction=0.4530 NC=0.3259 AC=0.0000 Combined=0.2607
+horse        ModelNC=0.153991 CleanNC=0.181162 Reduction=0.1500 NC=0.1805 AC=0.0000 Combined=0.1444
+frog         ModelNC=0.187553 CleanNC=0.236395 Reduction=0.2066 NC=0.1446 AC=0.0000 Combined=0.1157
+deer         ModelNC=0.140621 CleanNC=0.090807 Reduction=-0.5486 NC=0.1359 AC=0.0000 Combined=0.1088
+dog          ModelNC=0.143267 CleanNC=0.078427 Reduction=-0.8268 NC=0.1240 AC=0.0000 Combined=0.0992
+truck        ModelNC=0.231882 CleanNC=0.159532 Reduction=-0.4535 NC=0.0000 AC=0.2396 Combined=0.0479
+bird         ModelNC=0.160853 CleanNC=0.035444 Reduction=-3.5382 NC=0.0446 AC=0.0000 Combined=0.0357
+automobile   ModelNC=0.247512 CleanNC=0.188100 Reduction=-0.3159 NC=0.0000 AC=0.1458 Combined=0.0292
+airplane     ModelNC=0.232916 CleanNC=0.053271 Reduction=-3.3723 NC=0.0000 AC=0.0000 Combined=0.0000

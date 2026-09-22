@@ -1,0 +1,23 @@
+NEURAL CLEANSE RESULTS
+======================================================================
+Model: models/poisoned_model.pt
+Model Type: poisoned
+Images: 100
+Iterations: 80
+Restarts: 1
+
+Median trigger size: 0.170721
+MAD: 0.022143
+
+Class          Trigger Size      Success       MAD Score
+----------------------------------------------------------------------
+deer          0.140621           100.00        1.3594
+dog           0.143267           75.00         1.2399
+horse         0.153991           1.12          0.7555
+bird          0.160853           100.00        0.4457
+ship          0.168779           100.00        0.0877
+cat           0.172664           95.56         -0.0877
+frog          0.187553           100.00        -0.7601
+truck         0.231882           92.13         -2.7621
+airplane      0.232916           96.67         -2.8088
+automobile    0.247512           84.04         -3.4679
