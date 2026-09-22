@@ -1,0 +1,32 @@
+FAST LOCALIZED TRIGGER DETECTOR
+======================================================================
+Model: models/clean_model.pt
+Model Type: clean
+Patch Size: 3x3
+Images: 80
+Iterations: 40
+Median trigger size: 0.170347
+MAD: 0.085730
+
+Class          Trigger Size      Success       MAD Score
+----------------------------------------------------------------------
+bird          0.035444           35.00         1.5736
+Position: top_left
+airplane      0.053271           0.00          1.3656
+Position: bottom_left
+dog           0.078427           1.25          1.0722
+Position: bottom_right
+deer          0.090807           8.75          0.9278
+Position: bottom_right
+truck         0.159532           0.00          0.1262
+Position: bottom_right
+horse         0.181162           0.00          -0.1262
+Position: bottom_left
+automobile    0.188100           0.00          -0.2071
+Position: bottom_left
+frog          0.236395           0.00          -0.7704
+Position: top_right
+ship          0.308574           16.25         -1.6123
+Position: bottom_right
+cat           0.368866           28.75         -2.3156
+Position: top_right

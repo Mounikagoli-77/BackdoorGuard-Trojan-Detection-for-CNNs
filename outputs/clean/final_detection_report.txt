@@ -1,0 +1,35 @@
+============================================================
+COMBINED BACKDOOR DETECTOR
+CLEAN MODEL BASELINE
+============================================================
+
+Model: clean_model.pt
+Model Type: CLEAN
+
+NEURAL CLEANSE BASELINE
+-----------------------
+Median trigger size: 0.337249
+MAD: 0.048295
+
+ACTIVATION CLUSTERING BASELINE
+-------------------------------
+Mean anomaly score: 0.143280
+Std: 0.019896
+
+CLASS RESULTS
+-------------
+
+airplane     Trigger=0.451739 NC=0.0000 AC=0.1109 Combined=0.0333
+automobile   Trigger=0.387570 NC=0.0000 AC=0.0000 Combined=0.0000
+bird         Trigger=0.273876 NC=0.4374 AC=0.1964 Combined=0.3651
+cat          Trigger=0.346416 NC=0.0000 AC=0.0000 Combined=0.0000
+deer         Trigger=0.255596 NC=0.5636 AC=0.4426 Combined=0.5273
+dog          Trigger=0.384540 NC=0.0000 AC=0.4142 Combined=0.1242
+frog         Trigger=0.292532 NC=0.3086 AC=0.0070 Combined=0.2182
+horse        Trigger=0.328081 NC=0.0633 AC=0.0000 Combined=0.0443
+ship         Trigger=0.287950 NC=0.3403 AC=0.2282 Combined=0.3066
+truck        Trigger=0.357884 NC=0.0000 AC=0.0000 Combined=0.0000
+
+FINAL VERDICT
+-------------
+MODEL LIKELY CLEAN
